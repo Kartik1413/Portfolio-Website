@@ -8,18 +8,27 @@ const projectData = [
         id:1,
         title: "Portfolio Website",
         description: "Frontend Development",
-        image: "frontproj.png",
+        image: "/portfoliophoto.jpeg",
         tag: ["All", "Web Dev"],
         gitUrl: "https://github.com/sushanttx/my-portfolio",
         previewUrl: "/"
     },
     {
         id:2,
-        title: "We Collab",
-        description: "Full Stack Web and Cloud Development",
-        image: "fullproj.png",
-        tag: ["All","Web Dev", "Cloud"],
-        gitUrl: "https://github.com/sushanttx/fullstack-filestorage",
+        title: "Weather APP",
+        description: "Full Stack Web Development",
+        image: "/weather.png",
+        tag: ["All","Web Dev"],
+        gitUrl: "https://github.com/Kartik1413/Weather-App.git",
+        previewUrl: "/"
+    },
+    {
+        id:3,
+        title: "Stock Price Predictor",
+        description: "Machine Learning Project",
+        image: "/Machine-Learning.jpeg",
+        tag: ["All","Machine Learning"],
+        gitUrl: "https://github.com/Kartik1413/Stock-Price-Predictor.git",
         previewUrl: "/"
     }
 ]
@@ -45,7 +54,7 @@ const ProjectsSection = () => {
 
             <ProjectTag onClick={handleTagChange} name="Web Dev" isSelected={tag === "Web Dev"}/>
 
-            <ProjectTag onClick={handleTagChange} name="Cloud" isSelected={tag === "Cloud"}/>
+            <ProjectTag onClick={handleTagChange} name="Machine Learning" isSelected={tag === "Machine Learning"}/>
 
         </div>
         <div className="grid md:grid-cols-3 gap-8 md:gap-12 lg:mb-12">

@@ -4,8 +4,8 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
 const handleDownloadResume = () => {
-  const fileUrl = "Sushant_Langhi_Resume.pdf"; // Replace with your resume file path
-  const fileName = "Sushant_Langhi_Resume.pdf"; // Desired download name
+  const fileUrl = "Kartik_Resume.pdf"; // Replace with your resume file path
+  const fileName = "Kartik_Resume.pdf"; // Desired download name
 
   const link = document.createElement("a");
   link.href = fileUrl;
@@ -48,7 +48,7 @@ const HeroSection = () => {
             {isVisible && (
               <TypeAnimation
                 sequence={[
-                  "Sushant!",
+                  "Kartik!",
                   1000,
                   "A Web Developer",
                   1000,
@@ -64,7 +64,7 @@ const HeroSection = () => {
             )}
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-10">
-            Aspiring Software Engineer with proficiency in Java and Full-Stack Web application development with an interest in cloud computing platforms and machine learning. Actively, practically, and theoretically gaining a better understanding of computer operations.
+            Aspiring Software Engineer with proficiency in C++ and Full-Stack Web application development with an interest in machine learning. Actively, practically, and theoretically gaining a better understanding of computer operations.
           </p>
           <div>
             <button
@@ -88,7 +88,7 @@ const HeroSection = () => {
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
           <div className="rounded-full bg-gradient-to-b w-[320px] h-[320px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/mypic.png"
+              src="/kk_back.png"
               alt="my_pic"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={600}

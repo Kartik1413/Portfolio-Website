@@ -9,41 +9,41 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Programming Languages: Java, Python, C++, HTML, CSS, JavaScript.</li><br />
-        <li>Frameworks and libraries: Spring Boot, ReactJS, Next.js.</li><br />
-        <li>Databases: MySQL/SQL, PostgreSQL, MongoDB.</li><br />
+        <li>Programming Languages:Python, C++, HTML, CSS, JavaScript.</li><br />
+        <li>Frameworks and libraries: ReactJS, Next.js,Node-js, Flask</li><br />
+        <li>Databases: MySQL/SQL, MongoDB.</li><br />
         <li>Developer Tools: VS Code, Eclipse, IntelliJ IDEA.</li><br />
-        <li>Version Control, Cloud Platforms and Containerization: Git/GitHub, AWS, Docker.</li><br />
+        <li>Version Control, Git/GitHub, AWS, Docker.</li><br />
         <li>Operating Systems: Linux, Windows.</li>
       </ul>
     )
   },
-  {
-    title: "Publications",
-    id: "publications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Automating Helmet Usage Detection: A YOLOv8 Based Framework.
-          <br /> 
-          - DOI:10.22214/ijraset.2024.61533
-          <br />
-          - Feb 2024 – April 2024</li><br />
-        <li>The Potential And Security of Smart Contracts.
-        <br />- DOI: 10.13140/RG.2.2.28364.83840
-        <br /> - Sept 2023 – November 2023
-        </li>
+  // {
+  //   title: "Publications",
+  //   id: "publications",
+  //   content: (
+  //     <ul className="list-disc pl-2">
+  //       <li>Automating Helmet Usage Detection: A YOLOv8 Based Framework.
+  //         <br /> 
+  //         - DOI:10.22214/ijraset.2024.61533
+  //         <br />
+  //         - Feb 2024 – April 2024</li><br />
+  //       <li>The Potential And Security of Smart Contracts.
+  //       <br />- DOI: 10.13140/RG.2.2.28364.83840
+  //       <br /> - Sept 2023 – November 2023
+  //       </li>
         
-      </ul>
-    )
-  },
+  //     </ul>
+  //   )
+  // },
   {
     title: "Education",
     id: "education",
     content: (
       <ul className="list-disc pl-2">
         <li>PICT (Computer Engineering), Pune.
-          <br /> - CGPA: 7.55 <br />- Tenure: 2021 - Present</li><br />
-        <li>Fergusson College - HSC, Pune. <br />- Marks: 80%
+          <br /> - CGPA: 7.75 <br />- Tenure: 2021 - Present</li><br />
+        <li>Kendriya Vidyalaya Ganeshkhind - CBSE, Pune. <br />- Marks: 80.2%
         <br /> - Tenure: 2019 – 21</li>
       </ul>
     )
@@ -74,9 +74,9 @@ const AboutSection = () => {
                   <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"} >
                     {"  "}Skills {"  "}
                     </TabButton>
-                    <TabButton selectTab={() => handleTabChange("publications")} active={tab === "publications"} >
+                    {/* <TabButton selectTab={() => handleTabChange("publications")} active={tab === "publications"} >
                     {"  "}Publications {"  "}
-                    </TabButton>
+                    </TabButton> */}
                     <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"} >
                     {"  "}Education {"  "}
                     </TabButton>
